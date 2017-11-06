@@ -1,0 +1,130 @@
+@media screen and (max-width: 1240px) {
+  .navigation {
+    padding: 0 30px;
+  }
+  .container-small {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .banner {
+    padding: 20px 10px 35px;
+    h1 {
+      margin: 0 0 50px;
+      font-size: 45px;
+      img {
+        width: 50px;
+        margin: 0 10px -10px;
+      }
+    }
+    h2 {
+      margin: 0 0 50px;
+      span {
+        font-size: 30px;
+      }
+      img:first-of-type {
+        width: 120px;
+      }
+      img:last-of-type {
+        width: 25px;
+        margin-bottom: -5px;
+      }
+    }
+    .banner-text {
+      margin: 0 0 45px;
+      p {
+        font-size: 16px;
+        max-width: 355px;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .navigation {
+    line-height: 60px;
+    font-size: 24px;
+  }
+  .developers {
+    padding: 30px 0 20px;
+    .devs-wrap {
+      margin-right: 0;
+      .dev {
+        width: 100%;
+        margin-left: 0!important;
+      }
+    }
+  }
+  .join-form {
+    padding: 30px 0 40px;
+    h2 {
+      margin: 0 0 40px;
+      img {
+        width: 50px;
+        margin-bottom: -13px;
+      }
+    }
+    .form-wrapper {
+      padding: 0 10px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner {
+    h1 {
+      font-size: 35px;
+    }
+    .banner-text {
+      p {
+        max-width: 300px;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    line-height:1;
+    padding: 10px;
+  }
+  .developers {
+    h2 {
+      margin-bottom: 50px;
+    }
+    .devs-wrap .dev {
+      margin-bottom: 25px;
+      .dev-image {
+        width: 50px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .dev-content {
+        width: calc(100% - 50px);
+      }
+    }
+  }
+  .join-form {
+    .form-wrapper {
+      form {
+        input, textarea {
+          margin-bottom: 20px;
+        }
+        input {
+          height: 36px;
+        }
+        textarea {
+          padding-top: 10px;
+          height: 100px;
+        }
+      }
+    }
+  }
+  .footer {
+    img {
+      width: 100px;
+    }
+  }
+}

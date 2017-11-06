@@ -1,0 +1,161 @@
+body.sticky {
+  margin-top: 80px;
+}
+
+.banner {
+  background-image: url(assets/images/hero.jpg);
+  text-align: center;
+  padding: 56px 0 78px;
+  h2 {
+    line-height: 32px;
+    margin: 0 0 125px -25px;
+    img {
+      &:nth-of-type(2) {
+        margin-bottom: -12px;
+      }
+    }
+    span {
+      font-size: 50px;
+      font-family: $lato;
+      font-weight: 300;
+    }
+  }
+  h1 {
+    margin: 0 -18px 100px 0;
+    line-height: 50px;
+    img {
+      margin: 0 10px -32px 20px;
+    }
+  }
+  .banner-text {
+    margin: 0 0 45px -10px;
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      width: 100%;
+      max-width: 655px;
+      margin: 0 auto;
+    }
+  }
+
+}
+.navigation {
+  text-align: center;
+  position: relative;
+  line-height: 80px;
+  background-color: #000;
+  font-size: 36px;
+  padding: 0 100px;
+  a {
+    &:first-of-type {
+      float: left;
+    }
+    &:last-of-type {
+      float: right;
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+.developers {
+  background-image: url(assets/images/devs.jpg);
+  padding: 56px 0 24px;
+  h2 {
+    margin-bottom: 67px;
+  }
+  .devs-wrap {
+    margin-right: -11px;
+    .dev {
+      float: left;
+      width: calc(50% - 22px);
+      margin-bottom: 50px;
+      &:nth-child(2n) {
+        margin-left: 44px;
+      }
+      .dev-image {
+        float: left;
+        width: 100px;
+      }
+      .dev-content {
+        padding-left: 20px;
+        float: left;
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}
+.join-form {
+  background-image: url(assets/images/joinus.jpg);
+  padding: 50px 0 80px;
+  h2 {
+    margin: 0 -20px 60px 0;
+    img {
+      opacity: .5;
+      margin-bottom: -23px;
+      &:first-of-type {
+        margin-right: 55px;
+      }
+      &:last-of-type {
+        margin-left: 38px;
+      }
+    }
+  }
+  .form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    form {
+      position: relative;
+      input, textarea {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid $silver-chalice;
+        height: 62px;
+        margin-bottom: 28px;
+        padding: 0 10px;
+      }
+      textarea {
+        height: 200px;
+        text-align: center;
+        padding-top: 24px;
+      }
+      button {
+        width: 100%;
+      }
+      .message {
+        display: none;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        &.error {
+          color: red;
+        }
+        &.success {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.footer {
+  padding: 30px 0 36px;
+  background-color: #000;
+  text-align: center;
+  img {
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

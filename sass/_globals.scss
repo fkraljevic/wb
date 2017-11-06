@@ -1,0 +1,120 @@
+html{
+    font-size: 100%;
+    color: #fff;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+* html .clearfix{
+ height: 1%;
+ overflow: visible;
+}
+
+*+html .clearfix{
+ min-height: 1%;
+}
+
+a {
+  color: #fff;
+  font-family: $futura;
+  text-decoration: none;
+  @include transition(all .2s ease);
+
+}
+
+h1 {
+  font-size: 72px;
+  font-family: $futura;
+}
+
+h2 {
+  font-size: 64px;
+  font-family: $futura;
+  text-align: center;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $open;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+p {
+  font-family: $open;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@include input-placeholder, input, textarea {
+  font-family: $open;
+  font-size: 16px;
+  color: $gray;
+  &:focus {
+    outline: none;
+  }
+}
+
+.clearfix:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+ font-size: 0;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-small {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: $broom;
+  line-height: 60px;
+  padding: 0 110px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: $futura;
+  font-size: 20px;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
