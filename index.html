@@ -3,121 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Web burza</title>
-
 </head>
+
 <body>
-<div class="main-container">
-    <div id="about" class="banner background">
-        <h2>
-            <img src="assets/images/wb-logo.png">
-            <img src="assets/images/js-logo-s.png">
-            <span class="light">school</span>
-        </h2>
-        <h1>
-            Enter
-            <img src="assets/images/js-logo.png">
-            School
-        </h1>
-        <div class="banner-text">
-            <p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, </p>
-            <p>consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget</p>
-            <p>quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. </p>
-            <p>Curabitur blandit tempus porttitor.</p>
+    <div class="container-main">
+        <!--Main banner-->
+        <div id="about" class="banner background">
+            <!--Banner home link title-->
+            <h2 class="banner__title">
+                <a class="banner__title__home-link" href="/">
+                    <img class="banner__title__logo--wb" src="assets/images/wb-logo.png" alt="web burza logo"><img
+                        class="banner__title__logo--js" src="assets/images/js-logo-s.png" alt="javascript small logo"><span
+                        class="banner__title--light">school</span>
+                </a>
+            </h2>
+            <!--Banner main title-->
+            <h1 class="banner__hero-title">
+                Enter
+                <img class="banner__hero-title__logo" src="assets/images/js-logo.png" alt="javascript big logo">
+                School
+            </h1>
+            <!--Banner description-->
+            <div class="banner__text">
+                <p class="banner__text__description">Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit
+                    amet, </p>
+                <p class="banner__text__description">consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in,
+                    egestas eget</p>
+                <p class="banner__text__description">quam. Integer posuere erat a ante venenatis dapibus posuere velit
+                    aliquet. </p>
+                <p class="banner__text__description">Curabitur blandit tempus porttitor.</p>
+            </div>
+            <!--Banner link to JoinUs form-->
+            <button class="btn btn--yellow btn--anchor btn--small">Join us now</button>
         </div>
-        <a href="#joinus" class="btn yellow anchor">Join us now</a>
-    </div>
-    <div class="navigation clearfix">
-        <a class="anchor" href="#about">about</a>
-        <a class="anchor" href="#devs">devs</a>
-        <a class="anchor" href="#joinus">join us</a>
-    </div>
-    <div id="devs" class="developers background">
-        <h2>Devs</h2>
-        <div class="container-small">
-            <div class="devs-wrap clearfix">
-                <div class="dev clearfix">
-                    <div class="dev-image">
-                        <img src="assets/images/dev1.png">
+        <!--Main banner end-->
+
+        <!--Main navigation-->
+        <div class="navigation clearfix">
+            <div class="navigation__switch">
+                <span class="navigation__switch__hamburger"></span>
+                <span class="navigation__switch__hamburger"></span>
+                <span class="navigation__switch__hamburger"></span>
+            </div>
+            <a class="navigation__anchor navigation__anchor--first link" href="#about" title="about">about</a>
+            <a class="navigation__anchor link" href="#devs" title="devs">devs</a>
+            <a class="navigation__anchor navigation__anchor--last link" href="#joinus" title="join us">join us</a>
+        </div>
+        <!--Main navigation end-->
+
+        <!--Developers section-->
+        <div id="devs" class="developers background">
+            <!--Section title-->
+            <h2 class="section-title">Devs</h2>
+            <!--Small container-->
+            <div class="container-small">
+                <!--Developers wrapper-->
+                <div class="developers__wrap clearfix">
+                    <!--Developers list-->
+                    <div class="dev clearfix">
+                        <div class="dev__image">
+                            <img class="dev__image--avatar" src="assets/images/dev1.png" alt="Anthony Wolfe">
+                        </div>
+                        <div class="dev__content">
+                            <span class="dev__content__title title-name">Anthony Wolfe</span>
+                            <p class="dev__content__text">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor
+                                id nibh ultricies vehicula
+                                ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
                     </div>
-                    <div class="dev-content">
-                        <h5>Anthony Wolfe</h5>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                    <div class="dev clearfix">
+                        <div class="dev__image">
+                            <img class="dev__image--avatar" src="assets/images/dev2.png" alt="Frederick Parsons">
+                        </div>
+                        <div class="dev__content">
+                            <span class="dev__content__title title-name">Frederick Parsons</span>
+                            <p class="dev__content__text">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor
+                                id nibh ultricies vehicula
+                                ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
                     </div>
+                    <div class="dev clearfix">
+                        <div class="dev__image">
+                            <img class="dev__image--avatar" src="assets/images/dev3.png" alt="George McLaughlin">
+                        </div>
+                        <div class="dev__content">
+                            <span class="dev__content__title title-name">George McLaughlin</span>
+                            <p class="dev__content__text">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor
+                                id nibh ultricies vehicula
+                                ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                    <div class="dev clearfix">
+                        <div class="dev__image">
+                            <img class="dev__image--avatar" src="assets/images/dev4.png" alt="Ora Hernandez">
+                        </div>
+                        <div class="dev__content">
+                            <span class="dev__content__title title-name">Ora Hernandez</span>
+                            <p class="dev__content__text">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor
+                                id nibh ultricies vehicula
+                                ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                    <div class="dev clearfix">
+                        <div class="dev__image">
+                            <img class="dev__image--avatar" src="assets/images/dev5.png" alt="Travis Powell">
+                        </div>
+                        <div class="dev__content">
+                            <span class="dev__content__title title-name">Travis Powell</span>
+                            <p class="dev__content__text">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor
+                                id nibh ultricies vehicula
+                                ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                    <div class="dev clearfix">
+                        <div class="dev__image">
+                            <img class="dev__image--avatar" src="assets/images/dev1.png" alt="Harriett Mason">
+                        </div>
+                        <div class="dev__content">
+                            <span class="dev__content__title title-name">Harriett Mason</span>
+                            <p class="dev__content__text">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor
+                                id nibh ultricies vehicula
+                                ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                    <!--Developers list end-->
                 </div>
-                <div class="dev clearfix">
-                    <div class="dev-image">
-                        <img src="assets/images/dev2.png">
+                <!--Developers wrapper end-->
+            </div>
+            <!--Small container end-->
+        </div>
+        <!--Developers section end-->
+
+        <!--Join form section-->
+        <div id="joinus" class="join-form background">
+            <!--Honeycomb section title-->
+            <h2 class="join-form__title section-title">
+                <img class="join-form__title__honeycomb" src="assets/images/sace.svg" alt="honeycomb">Join us<img
+                    class="join-form__title__honeycomb" src="assets/images/sace.svg" alt="honeycomb">
+            </h2>
+
+            <div class="form-wrapper">
+                <!--Ajax form-->
+                <form id="ajaxform" class="joinus-form" action="" name="ajaxForm">
+                    <!--Name input field-->
+                    <div class="joinus-form__field-wrap">
+                        <input class="joinus-form__input" id="name" name="name" type="text" placeholder="Your full name*">
                     </div>
-                    <div class="dev-content">
-                        <h5>Frederick Parsons</h5>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+
+                    <!--Email input field-->
+                    <div class="joinus-form__field-wrap">
+                        <input class="joinus-form__input" id="email" name="email" type="email" placeholder="Your email*">
                     </div>
-                </div>
-                <div class="dev clearfix">
-                    <div class="dev-image">
-                        <img src="assets/images/dev3.png">
+
+                    <!--Message input field-->
+                    <div class="joinus-form__field-wrap">
+                        <textarea class="joinus-form__textarea" name="message" id="message"
+                                  placeholder="Write something nice about us..."></textarea>
+
                     </div>
-                    <div class="dev-content">
-                        <h5>George McLaughlin</h5>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-                <div class="dev clearfix">
-                    <div class="dev-image">
-                        <img src="assets/images/dev4.png">
-                    </div>
-                    <div class="dev-content">
-                        <h5>Ora Hernandez</h5>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-                <div class="dev clearfix">
-                    <div class="dev-image">
-                        <img src="assets/images/dev5.png">
-                    </div>
-                    <div class="dev-content">
-                        <h5>Travis Powell</h5>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-                <div class="dev clearfix">
-                    <div class="dev-image">
-                        <img src="assets/images/dev1.png">
-                    </div>
-                    <div class="dev-content">
-                        <h5>Harriett Mason</h5>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
+                    <!--Submit btn-->
+                    <button type="submit" class="btn btn--yellow">Join us!</button>
+                    <div id="form-msg" class="form-message"></div><!--form message-->
+                </form>
+                <!--Ajax form end-->
             </div>
         </div>
-    </div>
-    <div id="joinus" class="join-form background">
-        <h2><img src="assets/images/sace.svg">Join us<img src="assets/images/sace.svg"></h2>
-        <div class="form-wrapper">
-            <form id="ajaxform">
-                <input id="name" type="text">
-                <input id="email" type="text">
-                <textarea id="message" placeholder="Write something nice about us..."></textarea>
-                <button type="submit" class="btn yellow">Join us!</button>
-                <div class="message"></div>
-            </form>
+        <!--Join form section end-->
+
+        <!--Footer-->
+        <div class="footer">
+            <a class="footer__link" href="https://web.burza.hr" target="_blank" title="https://web.burza.hr">
+                <img class="footer__logo" src="assets/images/logo.png" alt="web burza logo">
+            </a>
+            <p class="footer__copyright">Copyright — 2016</p>
         </div>
+        <!--Footer end-->
     </div>
-    <div class="footer">
-        <img src="assets/images/logo.png" alt="">
-        <p>Copyright — 2016</p>
-    </div>
-</div>
 </body>
+<footer>
+    <!--Scripts-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <!--Scripts end-->
+</footer>
 </html>
